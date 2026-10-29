@@ -1,33 +1,24 @@
-# Desafio Controle de Fluxo - DIO
+# Desafio Controle de Fluxo
 
-Projeto do bootcamp Java da Digital Innovation One (DIO) que demonstra controle de fluxo, tratamento de exceções e estruturas de repetição.
+Exercício do bootcamp de Java da DIO sobre controle de fluxo e exceções.
 
-## Descrição
-
-Aplicação console que recebe dois números inteiros e realiza uma contagem entre eles. Valida se o segundo número é maior que o primeiro, caso contrário lança uma exceção customizada.
-
-## Como executar
-
-1. Compile: `javac src/*.java`
-2. Execute: `java -cp src Contador`
-
-## Exemplo de uso
+O programa pede dois números inteiros e imprime uma linha para cada número entre eles, contando quantos são. Se o segundo não for maior que o primeiro, lança a exceção `ParametrosInvalidosException` com a mensagem "O segundo parâmetro deve ser maior que o primeiro."
 
 ```
 Digite o primeiro parâmetro: 12
-Digite o segundo parâmetro: 30
+Digite o segundo parâmetro: 15
 Imprimindo o número 1
 Imprimindo o número 2
-...
-Imprimindo o número 18
+Imprimindo o número 3
 ```
 
-Se o segundo parâmetro for menor que o primeiro:
-```
-O segundo parâmetro deve ser maior que o primeiro.
-```
+Note que a contagem sempre começa em 1 e vai até a diferença entre os dois números, não até o segundo número.
 
-## Estrutura
+## Rodar
 
-- `Contador.java` - Classe principal
-- `ParametrosInvalidosException.java` - Exceção customizada
+Precisa do JDK. Dentro de `DesafioControleFluxo`:
+
+```
+javac src/*.java
+java -cp src Contador
+```
